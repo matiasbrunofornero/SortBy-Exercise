@@ -7,6 +7,8 @@ namespace ExerciseOrderBy
 {
     public class Analyser
     {
+        public static object Request { get; private set; }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Press ENTER key to display the loaded text");
@@ -14,11 +16,11 @@ namespace ExerciseOrderBy
             Console.Clear();
 
             /// <summary>
-            /// In string fileName we need to indicate when the text to use is located.
+            /// In string fileName program will display the file loaded input.txt in our folder.
             /// StreamReader will be displayed line by line the entire text in screen.
             /// </summary>
 
-            string fileName = @"C:\Users\mbruno009\Desktop\input.txt";
+            string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"bin\Debug\netstandard2.0", @"input.txt");
             using (System.IO.StreamReader sr = new System.IO.StreamReader(fileName))
             {
                 string line;
