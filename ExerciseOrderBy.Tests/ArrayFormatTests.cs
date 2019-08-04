@@ -8,7 +8,7 @@ namespace ExerciseOrderBy.Tests
     {
         [TestMethod]
         [TestCategory("ArrayFormat Tests")]
-        public void StringDoesNotContainSpecialCharacters()
+        public void FormatSpecialCharacters_StringWasCorrectlyFormattedToStringWithoutSpecialCharacters()
         {
             ArrayFormat arrayFormat = new ArrayFormat();
             string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"ExerciseOrderBy.Tests\bin\Debug", @"\ExerciseOrderBy\input.txt");
@@ -22,7 +22,7 @@ namespace ExerciseOrderBy.Tests
 
         [TestMethod]
         [TestCategory("ArrayFormat Tests")]
-        public void TextWasCorrectlyFormattedToArray()
+        public void TextToFormattedArray_TextWasCorrectlyFormattedToArray()
         {
             ArrayFormat arrayFormat = new ArrayFormat();
             string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"ExerciseOrderBy.Tests\bin\Debug", @"\ExerciseOrderBy\input.txt");
@@ -35,7 +35,7 @@ namespace ExerciseOrderBy.Tests
 
         [TestMethod]
         [TestCategory("ArrayFormat Tests")]
-        public void TextWasCorrectlyAscendingOrdered()
+        public void OrderByAscending_StringArrayWasCorrectlyOrderedByAscending()
         {
             ArrayFormat arrayFormat = new ArrayFormat();
             string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"ExerciseOrderBy.Tests\bin\Debug", @"\ExerciseOrderBy\input.txt");
