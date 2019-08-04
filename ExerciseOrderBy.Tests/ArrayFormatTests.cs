@@ -11,7 +11,7 @@ namespace ExerciseOrderBy.Tests
         public void StringDoesNotContainSpecialCharacters()
         {
             ArrayFormat arrayFormat = new ArrayFormat();
-            string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"UnitTestProject\bin\Debug", @"\ExerciseOrderBy\input.txt");
+            string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"ExerciseOrderBy.Tests\bin\Debug", @"\ExerciseOrderBy\input.txt");
 
             string lowerText = System.IO.File.ReadAllText(fileName).ToLower();
             string text = arrayFormat.FormatSpecialCharacters(lowerText);
@@ -25,7 +25,7 @@ namespace ExerciseOrderBy.Tests
         public void TextWasCorrectlyFormattedToArray()
         {
             ArrayFormat arrayFormat = new ArrayFormat();
-            string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"UnitTestProject\bin\Debug", @"\ExerciseOrderBy\input.txt");
+            string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"ExerciseOrderBy.Tests\bin\Debug", @"\ExerciseOrderBy\input.txt");
 
             string lowerText = System.IO.File.ReadAllText(fileName).ToLower();
             string[] formattedArray = arrayFormat.TextToFormattedArray(lowerText);
@@ -38,7 +38,7 @@ namespace ExerciseOrderBy.Tests
         public void TextWasCorrectlyAscendingOrdered()
         {
             ArrayFormat arrayFormat = new ArrayFormat();
-            string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"UnitTestProject\bin\Debug", @"\ExerciseOrderBy\input.txt");
+            string fileName = System.IO.Directory.GetCurrentDirectory().Replace(@"ExerciseOrderBy.Tests\bin\Debug", @"\ExerciseOrderBy\input.txt");
 
             string lowerText = System.IO.File.ReadAllText(fileName).ToLower();
             string[] formattedArray = arrayFormat.TextToFormattedArray(lowerText);
